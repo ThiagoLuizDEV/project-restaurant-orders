@@ -32,6 +32,6 @@ def test_dish():
     assert dish1.get_restrictions() != set('')
 
     with pytest.raises(TypeError):
-        Dish("lasanha berinjela", 'R$25.90')   
+        Dish("lasanha berinjela", 'R$25.90')
     with pytest.raises(ValueError):
         Dish("lasanha berinjela", -25.90)
